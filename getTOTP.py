@@ -111,4 +111,6 @@ if __name__ == "__main__":
     kid, n = get_domain_key(verify_data.domain)
     res = create_okta_authenticator(device_name, verify_data, kid, n)
     print(f"Your TOTP secret is: [green]{res['methods'][0]['sharedSecret']}[/]")
-    print("\n\nYou can now use the 'enter a code' authentication method")
+    print(
+        "\n\nAdd this to your TOTP manager.\nYou can now use the 'enter a code' authentication method on the Okta authenticate screen."
+    )
