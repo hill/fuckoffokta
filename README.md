@@ -1,10 +1,10 @@
 # fuckoffokta
 
-> Get TOPT secret from Okta QR code
+> Get TOTP secret from Okta QR code
 
 I would rather use 1password than the okta app as I am lazy and don't want to walk to my phone.
 
-Okta uses TOPT under the hood, we can extract the `sharedSecret` and then give that to 1password (or TOPT manager of your choice).
+Okta uses TOTP under the hood, we can extract the `sharedSecret` and then give that to 1password (or TOTP manager of your choice).
 
 ## Usage
 
@@ -22,10 +22,10 @@ Register a new "okta" device and take a screenshot of the QR code that appears o
 
 Run:
 
-`python3 getTOPT.py <okta_qr_code_image>`
+`python3 getTOTP.py <okta_qr_code_image>`
 
 
-Add the TOPT secret that appears to your password manager.
+Add the TOTP secret that appears to your password manager.
 (For 1password, add the secret into the field that appears under `edit > add more > one time password`)
 
 You can now choose "enter a code" as an authenticaiton option and let 1password autofill the field with your OTP.
