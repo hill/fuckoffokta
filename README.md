@@ -22,7 +22,7 @@ Register a new "okta" device and take a screenshot of the QR code that appears o
 
 Run:
 
-`python3 getTOTP.py <okta_qr_code_image>`
+`python3 getTOTP.py ./path/to/qr_code.png`
 
 
 Add the TOTP secret that appears to your password manager.
