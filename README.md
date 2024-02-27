@@ -1,5 +1,7 @@
 # fuckoffokta
 
+> Get TOPT secret from Okta QR code
+
 I would rather use 1password than the okta app as I am lazy and don't want to walk to my phone.
 
 Okta uses TOPT under the hood, we can extract the `sharedSecret` and then give that to 1password (or TOPT manager of your choice).
